@@ -1,10 +1,9 @@
 {
-  "name": "@rikopernando/client-app",
-  "version": "1.0.1",
+  "name": "@rikopernando/web-components",
+  "version": "0.1.0",
   "private": true,
+  "main": "./src/index.js",
   "dependencies": {
-    "@craco/craco": "^6.4.3",
-    "@rikopernando/web-components": "^0.1.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -14,10 +13,10 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "echo testing React app",
-    "eject": "craco eject"
+    "start": "set PORT=3006 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

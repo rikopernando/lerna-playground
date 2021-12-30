@@ -1,12 +1,15 @@
 {
-  "name": "root",
+  "name": "@rikopernando/root",
   "private": true,
   "version": "1.0.0",
   "devDependencies": {
     "lerna": "^4.0.0"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "lerna run start --scope={client-app,server-api}",
+    "start": "lerna run start --scope={@rikopernando/client-app,@rikopernando/server-api,@rikopernando/web-components}",
     "new-version": "lerna version --conventional-commits --yes",
     "diff": "lerna diff"
   }
